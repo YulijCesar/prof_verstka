@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #222222;
+    height: 100px;
+}
+
+.footer {
+    background-color: #222224;
+    height: 100px;
+}
+
+.main_menu {
+    display: inline-block;
+}
