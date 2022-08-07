@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #222222;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.search,
+.account_link,
+.hamburger,
+.cart {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+
+.search {
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/search.svg");
+}
+
+.hamburger {
+  width: 32px;
+  height: 23px;
+  background-image: url("../images/hamburger.svg");
+}
+
+.account_link {
+  width: 29px;
+  height: 29px;
+  background-image: url("../images/account.svg");
+}
+
+.cart {
+  position: relative;
+  width: 41px;
+  height: 37px;
+  background-image: url("../images/cart.svg");
+}
+
+.cart_number {
+  line-height: 1.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background-color: #f16d7f;
+  width: 19px;
+  height: 19px;
+  color: #ffffff;
+  border-radius: 50%;
+}
