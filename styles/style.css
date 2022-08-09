@@ -6,14 +6,26 @@
   box-sizing: border-box;
 }
 
-.header {
-  background-color: #222222;
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
 }
+
+.header {
+  position: relative;
+  background-color: #222222;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .inner {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   margin: 0 auto;
   width: 1140px;
@@ -38,40 +50,56 @@ body {
 .cart {
   display: inline-block;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
   background-color: transparent;
   border: none;
 }
 
+.search,
+.account_link,
+.hamburger,
+.cart,
+.logo {
+  min-height: 75px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
 .search {
   width: 26px;
-  height: 26px;
   background-image: url("../images/search.svg");
+  background-position-y: 30px;
 }
 
 .hamburger {
   width: 32px;
-  height: 23px;
   background-image: url("../images/hamburger.svg");
+  background-position-y: 30px;
 }
 
 .account_link {
   width: 29px;
-  height: 29px;
   background-image: url("../images/account.svg");
+  background-position-y: 24px;
+  margin-left: 33px;
+  margin-right: 33px;
 }
 
 .cart {
   position: relative;
   width: 41px;
-  height: 37px;
   background-image: url("../images/cart.svg");
+  background-position-y: 24px;
 }
 
 .cart_number {
   line-height: 1.4;
   position: absolute;
-  top: 0;
+  top: 16px;
   right: 0;
   display: block;
   background-color: #f16d7f;
@@ -79,4 +107,43 @@ body {
   height: 19px;
   color: #ffffff;
   border-radius: 50%;
+}
+
+.navigation {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  width: 232px;
+  height: 764px;
+  left: 1368px;
+  top: 75px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  box-shadow:-9px 0px 26px 0px rgba #6f6e6e;
+}
+
+.heading_3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+.menu_link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  p
+}
+
+.menu_item,
+.menu_links_item {
+  list-style-type: none;
+}
+
+.button_close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
