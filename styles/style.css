@@ -225,3 +225,89 @@ body {
 .intro_heading_color {
   color: #f16d7f;
 }
+
+/* OFFERS SECTION STYLES */
+
+.offers {
+  padding-top: 65px;
+  padding-bottom: 96px;
+}
+
+.offers_list {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.offers_item {
+  position: relative;
+  background: none;
+  background-position: center;
+  background-size: cover;
+  min-height: 260px;
+  list-style: none;
+}
+
+.offers_item::after {
+  content: "";
+  display: block;
+  height: 260px;
+  width: 100%;
+  background-color: rgba(33, 22, 22, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.offers_item_accesories::after {
+  height: 180px;
+}
+
+.offers_item:hover::after {
+  display: none;
+}
+
+.offers_item_women {
+  background-image: url("../images/offers_for_woman.jpg");
+}
+
+.offers_item_men {
+  background-image: url("../images/offers_for_man.jpg");
+}
+
+.offers_item_kids {
+  background-image: url("../images/offers_for_kids.jpg");
+}
+.offers_item_accesories {
+  background-image: url("../images/offers_for_accesories.jpg");
+  grid-column: 1 / span 3;
+  min-height: 180px;
+}
+
+.offers_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 260px;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.offers_item_accesories .offers_link {
+  min-height: 180px;
+}
+
+.offers_heading {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.offers_heading_color {
+  font-size: 24px;
+  color: #f16d7f;
+  font-weight: 700;
+}
