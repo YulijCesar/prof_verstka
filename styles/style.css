@@ -328,7 +328,6 @@ body {
 
 .fetured_paragraph {
   font-weight: 400;
-  font-size: 14px;
   line-height: 17px;
   color: #9f9f9f;
   padding-bottom: 48px;
@@ -342,13 +341,20 @@ body {
   justify-content: center;
 }
 
-.fetured_card {
+.card {
   position: relative;
   background-position: center;
   background-size: cover;
   list-style: none;
-  min-height: 420px;
-  margin-bottom: 48px;
+  min-height: 580px;
+  background: #f8f8f8;
+}
+
+.card_inner {
+  padding-top: 24px;
+  padding-right: 29px;
+  padding-bottom: 20px;
+  padding-left: 16px;
 }
 
 .card_link {
@@ -363,9 +369,10 @@ body {
 
 .card_discription {
   font-weight: 300;
-  font-size: 14px;
   line-height: 17px;
   color: #5d5d5d;
+  margin-top: 13px;
+  margin-bottom: 18px;
 }
 .card_price {
   font-weight: 400;
@@ -375,10 +382,8 @@ body {
 }
 
 .fetured_button {
-  display: inline-block;
-  box-sizing: border-box;
+  display: block;
   padding: 0 30px;
-  margin: 0 25px 25px 0;
   outline: none;
   border: 1px solid #f26376;
   background-color: #fff;
@@ -388,6 +393,9 @@ body {
   line-height: 19px;
   color: #f26376;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
 }
 
 /* PROPOSAL SECTION STYLES */
@@ -402,6 +410,28 @@ body {
   list-style: none;
 }
 
+.proposal_item {
+  padding-top: 60px;
+}
+
+.proposal_item_delivery {
+  background-image: url(../images/delivery_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.proposal_item_sales {
+  background-image: url(../images/sale_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.proposal_item_quality {
+  background-image: url(../images/crown_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
 .proposal_heading {
   font-weight: 400;
   font-size: 19.96px;
@@ -412,10 +442,10 @@ body {
 }
 .proposal_paragraph {
   font-weight: 300;
-  font-size: 13.972px;
   line-height: 17px;
   color: #fbfbfb;
   text-align: center;
+  width: 300px;
 }
 /* FOOTER TYLES */
 
