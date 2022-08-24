@@ -453,26 +453,105 @@ body {
   background-image: url(../images/subscrb_background.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 448px;
+  background-size: cover;
+}
+.footer_inner_top .container {
+  display: flex;
+}
+
+.footer_review {
+  width: 50%;
+  min-height: 448px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review_feedback {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  font-style: italic;
+  width: 360px;
+  margin-top: 30px;
+}
+
+.footer_subscribe {
+  width: 50%;
+  min-height: 448px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_heading_small {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_form {
+  display: flex;
+  margin-top: 32px;
+}
+
+.subscribe_form_input {
+  width: 320px;
+  height: 50px;
+  border: none;
+  background-color: #e1e1e1;
+  padding-left: 22px;
+  line-height: 17px;
+  color: #222224;
+  border-radius: 50px 0 0 50px;
+}
+
+.subscribe_form_submit {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #e05c6e;
+  line-height: 17px;
+  color: #ffffff;
+  border-radius: 0 50px 50px 0;
 }
 
 .footer_inner_bottom {
   background-color: rgba(34, 34, 36, 1);
+}
+
+.footer_inner_bottom .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 80px;
 }
-.footer_inner_copy_text {
+.footer_inner_copy {
   color: rgba(251, 251, 251, 1);
 }
-.footer_inner_links_media {
+.footer_inner_list {
   list-style-type: none;
+  display: flex;
+  gap: 8px;
 }
-.footer_inner_link {
-  display: inline-block;
-  text-align: center;
-  line-height: 32px;
+
+.footer_inner_item_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
   background-color: rgba(255, 255, 255, 1);
