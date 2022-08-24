@@ -311,3 +311,248 @@ body {
   color: #f16d7f;
   font-weight: 700;
 }
+
+/* FETURED SECTION STYLES */
+
+.fetured {
+  padding-bottom: 95px;
+}
+.fetured_heading {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.fetured_paragraph {
+  font-weight: 400;
+  line-height: 17px;
+  color: #9f9f9f;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.fetured_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  list-style: none;
+  min-height: 580px;
+  background: #f8f8f8;
+}
+
+.card_inner {
+  padding-top: 24px;
+  padding-right: 29px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+}
+
+.card_link {
+  text-decoration: none;
+}
+.card_heading {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.card_discription {
+  font-weight: 300;
+  line-height: 17px;
+  color: #5d5d5d;
+  margin-top: 13px;
+  margin-bottom: 18px;
+}
+.card_price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+
+.fetured_button {
+  display: block;
+  padding: 0 30px;
+  outline: none;
+  border: 1px solid #f26376;
+  background-color: #fff;
+  height: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+}
+
+/* PROPOSAL SECTION STYLES */
+.proposal {
+  background-color: #222222;
+}
+.proposal_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 341px;
+  list-style: none;
+}
+
+.proposal_item {
+  padding-top: 60px;
+}
+
+.proposal_item_delivery {
+  background-image: url(../images/delivery_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.proposal_item_sales {
+  background-image: url(../images/sale_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.proposal_item_quality {
+  background-image: url(../images/crown_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.proposal_heading {
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #fbfbfb;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.proposal_paragraph {
+  font-weight: 300;
+  line-height: 17px;
+  color: #fbfbfb;
+  text-align: center;
+  width: 300px;
+}
+/* FOOTER TYLES */
+
+.footer_inner_top {
+  background-image: url(../images/subscrb_background.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.footer_inner_top .container {
+  display: flex;
+}
+
+.footer_review {
+  width: 50%;
+  min-height: 448px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review_feedback {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  font-style: italic;
+  width: 360px;
+  margin-top: 30px;
+}
+
+.footer_subscribe {
+  width: 50%;
+  min-height: 448px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_heading_small {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_form {
+  display: flex;
+  margin-top: 32px;
+}
+
+.subscribe_form_input {
+  width: 320px;
+  height: 50px;
+  border: none;
+  background-color: #e1e1e1;
+  padding-left: 22px;
+  line-height: 17px;
+  color: #222224;
+  border-radius: 50px 0 0 50px;
+}
+
+.subscribe_form_submit {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #e05c6e;
+  line-height: 17px;
+  color: #ffffff;
+  border-radius: 0 50px 50px 0;
+}
+
+.footer_inner_bottom {
+  background-color: rgba(34, 34, 36, 1);
+}
+
+.footer_inner_bottom .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+.footer_inner_copy {
+  color: rgba(251, 251, 251, 1);
+}
+.footer_inner_list {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+}
+
+.footer_inner_item_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 1);
+}
