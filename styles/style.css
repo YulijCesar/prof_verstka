@@ -449,15 +449,14 @@ body {
 }
 /* FOOTER TYLES */
 
-.footer_inner {
+.footer_inner_top {
   background-image: url(../images/subscrb_background.png);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-position: bottom;
   height: 448px;
 }
 
-.footer_inner_2 {
+.footer_inner_bottom {
   background-color: rgba(34, 34, 36, 1);
   display: flex;
   justify-content: space-around;
